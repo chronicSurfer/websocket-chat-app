@@ -1,4 +1,5 @@
 const express = require('express');
+const socket = require('socket.io');
 
 //App setup
 const app = express();
@@ -10,3 +11,13 @@ const server = app.listen(5000, function(){
 
 //static file
 app.use(express.static('public'));
+
+//Socket setup
+const io = socket(server);
+
+io.on('connection', function(socket){
+    console.log("Socket Connection Made", socket.id);
+    // socket.on('disconnect', function(){
+    //     console.log("User Disconnected");
+    // });
+});
