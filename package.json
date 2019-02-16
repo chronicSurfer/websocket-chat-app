@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/chronicSurfer/websocket-chat-app/issues"
   },
-  "homepage": "https://github.com/chronicSurfer/websocket-chat-app#readme"
+  "homepage": "https://github.com/chronicSurfer/websocket-chat-app#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
 }
